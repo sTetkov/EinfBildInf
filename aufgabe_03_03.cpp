@@ -248,7 +248,7 @@ int main(int argc, char** argv)
   glutInitWindowPosition(0, 0);         // position window
                                         // create a titled drawing window (double buffered)
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
-  glutCreateWindow("Übung 01 Aufgabe 05");
+  glutCreateWindow("Übung 03 Aufgabe 03");
   glutDisplayFunc(display);             // define the custom opengl function
   glutKeyboardFunc(keyboard);           // keyboard callback
   glutReshapeFunc(reshape);             // reshape callback
