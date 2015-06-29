@@ -52,7 +52,7 @@ double* getTransformationMatrix(PointType p1, PointType p2) {
 		x=p1.first-p2.first;
 		y=p2.second-p1.second;
 	}
-	double angle=atan2(y,x);
+	double angle=atan2(x,y);
 	double *m = new double[2*2];
   m[0]=cos(angle);
   m[1]=sin(angle);

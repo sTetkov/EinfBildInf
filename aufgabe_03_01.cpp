@@ -8,8 +8,6 @@
 
 #include <vector>
 
-#define POINTS_PER_BATCH 10
-
 typedef std::pair< double, double > PointType;
 typedef std::vector< PointType >    PointListType;
 
