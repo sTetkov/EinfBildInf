@@ -111,5 +111,7 @@ int main(int argc, char** argv)
    glutDisplayFunc(display);             // define the custom opengl function
    glutReshapeFunc(reshape);             // reshape callback
    glutMainLoop();                       // enter the GLUT event processing loop
+   glutReshapeFunc(reshape);             // reshape callback
+   glutMainLoop();                       // enter the GLUT event processing loop
    return 0;                             // everything's gone fine ;)
 }

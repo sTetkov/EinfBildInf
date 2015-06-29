@@ -61,11 +61,11 @@ void fillCircle(float x, float y, float z, float radius, int polygons)
   */
 void drawScene()
 {
-  glColor4f(0.0, 1.0, 0.0, 1.0);
-  fillCircle(0.0, 0.0, 0.0, radius, polygonAmount);
-
   glColor4f(0.0, 0.0, 0.0, 1.0);        // redefine pen color
   drawCircle(0.0, 0.0, 0.0, radius, segmentAmount);
+
+  glColor4f(0.0, 1.0, 0.0, 1.0);
+  fillCircle(0.0, 0.0, 0.0, radius, polygonAmount);
 }
 
 /**
@@ -173,7 +173,7 @@ int main(int argc, char** argv)
   glutInitWindowPosition(0, 0);         // position window
                                         // create a titled drawing window (double buffered)
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
-  glutCreateWindow("Übung 01 Aufgabe 05");
+  glutCreateWindow("Übung 01 Aufgabe 04");
   glutDisplayFunc(display);             // define the custom opengl function
   glutKeyboardFunc(keyboard);           // keyboard callback
   glutReshapeFunc(reshape);             // reshape callback
